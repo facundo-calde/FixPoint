@@ -1,0 +1,239 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  /* Esto asegura que los bordes y paddings se incluyan dentro del ancho total */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.398);
+  border-radius: 8px;
+  overflow: hidden;
+  /* Evitar desbordamiento del contenedor */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2.title2 {
+  font-size: 17px;
+  padding: 0;
+  margin: 5px
+}
+
+/* Filtros */
+.filters {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  /* Los filtros se ajustan a la pantalla */
+  gap: 10px;
+  /* Espacio entre los filtros */
+}
+
+.filters label,
+.filters input,
+.filters button {
+  margin-right: 10px;
+}
+
+.filters label {
+  font-size: 16px;
+}
+
+.filters input,
+.filters button {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.filters button {
+  background-color: #007bffe1;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #808182;
+}
+
+/* Estilo de la tabla */
+#taskTable {
+  margin-top: 5px;
+  /* Añadir separación en la parte superior */
+  margin-bottom: 10px;
+  /* Añadir separación en la parte inferior */
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: transparent;
+  /* Fondo blanco para destacarla */
+  border-radius: 8px;
+}
+
+#taskTable th,
+#taskTable td {
+  border: 1px solid rgb(206, 203, 203);
+  padding: 12px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+#taskTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+#tassTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Totales */
+.totals {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.totals p {
+  margin: 0;
+}
+
+.totals {
+  border: 1px solid rgba(128, 128, 128, 0.409);
+  margin-bottom: 20px;
+}
+
+/* Nuevos estilos para los botones centrados */
+#printButton,
+#logoutButton {
+  padding: 6px 12px;
+  /* Reducir tamaño */
+  font-size: 12px;
+  /* Hacer el texto más pequeño */
+  margin: 10px 0;
+  /* Espacio superior e inferior */
+  display: inline-block;
+  /* Para que estén alineados en línea */
+  border: transparent;
+  box-shadow: 1px 1px 3px grey;
+}
+
+#logoutButton {
+  background-color: #f03737c8;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutButton:hover {
+  background-color: #808182;
+}
+
+#printButton {
+  background-color: #007bff;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#printButton:hover {
+  background-color: #808182;
+}
+
+#tasksButton {
+  background-color: #007bff;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: transparent;
+}
+
+#tasksButton:hover {
+  background-color: #808182;
+}
+
+#registerButton {
+  background-color: #007bffdd;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  border: transparent;
+  box-shadow: 1px 1px 3px grey;
+  cursor: pointer;
+}
+
+#registerButton:hover {
+  background-color: #808182;
+}
+
+/* Centrar los botones en su contenedor */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Espacio entre los botones */
+
+}
+
+/* Asegúrate de que los bordes se apliquen correctamente al id */
+#TaskTablePending {
+  border-collapse: collapse;
+  /* Fusiona los bordes de las celdas */
+  width: 100%;
+  /* Asegura que la tabla ocupe el ancho completo */
+}
+
+#TaskTablePending th,
+#TaskTablePending td {
+  border: 1px solid rgb(206, 203, 203);
+  /* Borde gris de 1px */
+  padding: 8px;
+  /* Espacio dentro de las celdas */
+  text-align: left;
+  /* Alineación de texto a la izquierda */
+}
+
+#TaskTablePending th {
+  background-color: #f2f2f2;
+  /* Color de fondo para los encabezados */
+}
+
+/* Opcional: para asegurarse que las filas tengan bordes inferiores */
+#TaskTablePending tbody tr {
+  border-bottom: 1px solid grey;
+}
+
+#showPendingTasks {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+  outline: none;
+}

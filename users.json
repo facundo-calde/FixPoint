@@ -1,0 +1,34 @@
+[
+  {
+    "username": "testUser",
+    "password": "$2a$10$Er/P5opvaBDUYuVDEZa1Vuh3niri2Z3ut1s4umg8K09ufWVITbqXe"
+  },
+  {
+    "username": "facu",
+    "password": "$2a$10$sa0B/7MVOtVBK4NUyCuX5.b.dB1FuqrtY7PaSvRjAfkm4F2tYCuXe"
+  },
+  {
+    "username": "agustin",
+    "password": "$2a$10$ZcwNszXXNYPIOymP8YjkzuYnNk6emdIVgzysrb1H44/NzmYUqEyiK"
+  },
+  {
+    "username": "agus",
+    "password": "$2a$10$G/2V9igMCKGvH3GkrzL4VeJ5xIKXwFM3O2bt.kpKWbWG0tdrKzTBG"
+  },
+  {
+    "username": "facundo",
+    "password": "$2a$10$cEWJqjLHsiSO1TzLVfydxuketT6bKTFwLc1h2b/MOvUVjKpT4LOzm"
+  },
+  {
+    "username": "ada",
+    "password": "$2a$10$CAO2lIrX.ag7rFG0LilpPerG/xrnPxc.95LYcA4C/pZPwhEeG0/bq"
+  },
+  {
+    "username": "agustincalde",
+    "password": "$2a$10$ozKWHqqaRfVyIv8gF0sCLuzV.5ruO1o7kJPAHYzdjNVFANTz19u06"
+  },
+  {
+    "username": "ever",
+    "password": "$2a$10$q1Csnhbn6i0ikbToiS20B.dhps5SEV2nbXcI07DIHGjLS9vIyQsG6"
+  }
+]

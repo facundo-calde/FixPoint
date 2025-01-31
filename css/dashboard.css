@@ -1,0 +1,224 @@
+/* Restablecimiento de márgenes y rellenos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body y contenedor principal */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  /* Aseguramos que el body ocupe toda la altura disponible */
+  display: flex;
+  flex-direction: column;
+  /* Alineamos los elementos en columna */
+  justify-content: flex-start;
+}
+
+/* Contenedor principal */
+.container {
+  width: 97%;
+  height: 100vh;
+  /* Ocupa el 100% de la altura del navegador */
+  max-width: none;
+  /* Elimina el límite de 1200px */
+  margin: auto;
+  padding: 20px;
+  background-color: #e5e7e9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  /* Para apilar los elementos dentro de .container de arriba hacia abajo */
+  max-height: 100vh;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el h2 en dashboard.css */
+h2.title2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 5px 0 0;
+  color: #333;
+  /* Color de texto consistente */
+}
+
+/* Estilo para las tareas (en la tabla) */
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.105);
+  font-size: 14px;
+  /* Tamaño de texto consistente */
+  color: #333;
+  /* Color de texto consistente */
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Para las celdas de la tabla con prioridad */
+table .prioridad {
+  font-weight: bold;
+}
+
+table .prioridad.alta {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.383);
+  /* Rojo para Alta */
+}
+
+table .prioridad.media {
+  color: white;
+  background-color: rgba(255, 166, 0, 0.475);
+  /* Naranja para Media */
+}
+
+
+/* Estilo de los campos de entrada */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  /* Aseguramos que todos los campos de entrada tengan el 100% del ancho */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* textarea específico */
+.input-group textarea {
+  resize: none;
+  /* Deshabilitamos el redimensionado */
+  height: 80px;
+  /* Altura ajustada para el textarea */
+}
+
+/* Contenedor para los botones */
+/* Contenedor de los botones */
+.div-btn {
+  display: flex;
+  /* Usamos flexbox para los botones */
+  justify-content: flex-start;
+  /* Alinea los botones a la izquierda */
+  gap: 10px;
+  /* Espacio entre los botones */
+  width: 100%;
+  /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Estilo de los botones en dashboard.css */
+.btn-submit,
+.btn-logout {
+  display: flex;
+  /* Usamos flexbox dentro del botón */
+  flex-direction: column;
+  /* Alinea el contenido del botón verticalmente */
+  justify-content: center;
+  /* Centra el contenido verticalmente */
+  align-items: center;
+  /* Centra el contenido horizontalmente */
+  padding: 8px 20px;
+  /* Aseguramos un padding adecuado */
+  font-size: 14px;
+  /* Aseguramos un tamaño de fuente uniforme */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.696);
+  height: 50px;
+  /* Ajusta la altura de los botones para que sean más pequeños */
+  width: 100px;
+  /* Mantén el mismo ancho para todos los botones */
+  text-align: center;
+  /* Centra el texto dentro del botón */
+}
+
+/* Estilo de cada botón */
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-logout {
+  background-color: #f03737c8;
+  color: white;
+}
+
+/* Efecto hover */
+.btn-submit:hover,
+.btn-logout:hover {
+  background-color: #808182;
+}
+
+
+
+
+/* Tabla de tareas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.105);
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Botón de cerrar sesión */
+#logoutButton:hover {
+  background-color: #0056b3;
+}
+
+/* Color para las celdas de Prioridad */
+.prioridad {
+  font-weight: bold;
+}
+
+.prioridad.alta {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.383);
+  /* Rojo para Alta */
+}
+
+.prioridad.media {
+  color: white;
+  background-color: rgba(255, 166, 0, 0.475);
+  /* Naranja para Media */
+}

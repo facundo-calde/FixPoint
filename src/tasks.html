@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Mantenimiento</title>
+  <link rel="stylesheet" href="/css/tasks.css">
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Ingreso de Tareas</h1>
+
+    <!-- Formulario de ingreso de tareas -->
+    <form id="taskForm">
+      <div class="input-group">
+        <label for="descripcion">Descripción del mantenimiento</label>
+        <textarea id="descripcion" name="descripcion" required
+          placeholder="Ingrese la descripción de la tarea"></textarea>
+      </div>
+
+      <div class="input-group">
+        <label for="area">Área</label>
+        <select id="area" name="area" required>
+          <option value="Salon">Salon</option>
+          <option value="Postventa">Postventa</option>
+          <option value="Entrega">Entrega</option>
+          <option value="Administración">Administración</option>
+          <option value="Gerencia">Gerencia</option>
+          <option value="Subsuelo">Subsuelo</option>
+          <option value="Playa">Playa</option>
+          <option value="Comedor">Comedor</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="prioridad">Prioridad</label>
+        <select id="prioridad" name="prioridad" required>
+          <option value="Alta">Alta</option>
+          <option value="Media">Media</option>
+        </select>
+      </div>
+      <div>
+        <button id="addTaskButton" type="submit" class="btn-submit">Agregar Tarea</button>
+        <button id="logoutButton" class="btn-logout">Cerrar sesión</button>
+        <button id="specialButton" class="btn-client">Panel de Gerencia</button>
+      </div>
+    </form>
+    <!-- Tabla para mostrar las tareas -->
+    <h2 class="title2">Tareas Ingresadas</h2>
+    <div class="div-btn">
+    </div>
+    <table id="tasksTable">
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Prioridad</th>
+          <th>Área</th>
+          <th>Fecha y Hora</th>
+          <th>Estado</th>
+          <th id="cost-1">Costo</th>
+          <th>Usuario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Las tareas ingresadas se mostrarán aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/script/tasks.js"></script>
+</body>
+
+</html>

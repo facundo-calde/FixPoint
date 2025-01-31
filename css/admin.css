@@ -1,0 +1,152 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/img/backgroudLogin.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedores de .other y .register */
+.other,
+.register {
+    width: 45%;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+/* Estilo para los enlaces dentro del div.other */
+.other a {
+    text-decoration: none;
+    color: white !important;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+.other a:hover {
+    color: #1b1b1b !important;
+}
+
+/* Estilo para los enlaces visitados */
+.other a:visited {
+    color: #555;
+    text-decoration: none;
+}
+
+/* Título dentro del formulario */
+.title2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Centrar el formulario dentro de .register */
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo de los campos de entrada */
+input,
+select {
+    width: 100%;
+    margin: 5px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo de los campos de entrada cuando están enfocados */
+input:focus,
+select:focus {
+    border-color: #007bff9b;
+    outline: none;
+    background-color: #eaf4ff;
+}
+
+/* Estilo del botón */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #4c4d4e9f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #1b1b1b;
+}
+
+/* Estilo del botón de cierre de sesión */
+#logoutButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7f1008a1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Efecto hover del botón de cierre de sesión */
+#logoutButton:hover {
+    background-color: #1b1b1b;
+}
+
+/* Estilo para el selector de rol */
+.div-adm {
+    width: 100%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 6,
+    "description": "reaparar cafetera",
+    "priority": "Alta",
+    "area": "Salon",
+    "createdAt": "2025-01-27T18:29:19.409Z",
+    "status": "Eliminada",
+    "cost": 100000,
+    "user": "facundo",
+    "completedAt": "27/1/2025, 15:48:13"
+  },
+  {
+    "id": 3,
+    "description": "reparar ventana",
+    "priority": "Alta",
+    "area": "Entrega",
+    "createdAt": "2025-01-27T18:36:41.710Z",
+    "status": "Eliminada",
+    "cost": 50000,
+    "user": "facundo",
+    "completedAt": "27/1/2025, 15:48:26"
+  }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial de mantenimiento</title>
+  <link rel="stylesheet" href="/css/client.css">
+  <!-- Incluir bcryptjs desde un CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Historial de Tareas de Mantenimiento</h1>
+
+    <!-- Filtros de fecha -->
+    <div class="filters">
+      <label for="startDate">Desde:</label>
+      <input type="date" id="startDate" name="startDate">
+      <label for="endDate">Hasta:</label>
+      <input type="date" id="endDate" name="endDate">
+      <button id="filterButton">Cargar Tareas</button>
+      <input type="checkbox" id="showPendingTasks" /> Mostrar tareas pendientes
+    </div>
+
+    <!-- Tareas completadas -->
+    <h2 class="title2">Historial de Tareas:</h2>
+    <table id="taskTable">
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Prioridad</th>
+          <th>Área</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+          <th>Duración</th>
+          <th>Costo</th>
+          <th>Usuario</th>
+        </tr>
+      </thead>
+      <tbody id="tasksTable">
+        <!-- Las tareas completadas se agregarán aquí dinámicamente -->
+      </tbody>
+    </table>
+
+    <!-- Totales -->
+    <div class="totals">
+      <p id="totalCost">Total de Costo: $0</p>
+      <p id="taskCount">Cantidad de tareas: 0</p>
+    </div>
+
+    <!-- Formulario para registrar usuario -->
+    <h2 class="title2">Registrar Usuario</h2>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+      <!-- Selección de rol -->
+      <select id="role" required>
+        <option value="usuario">Usuario</option>
+        <option value="mantenimiento">Mantenimiento</option>
+      </select>
+
+      <button type="button" id="registerButton">Registrar</button>
+    </form>
+
+    <!-- Botones para imprimir y cerrar sesión -->
+    <button id="printButton">Imprimir Tareas</button>
+    <button id="tasksButton">Panel de gestion</button>
+    <button id="logoutButton">Cerrar Sesión</button>
+  </div>
+
+  <script src="/script/client.js"></script>
+</body>
+
+</html>

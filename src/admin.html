@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="/css/admin.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+</head>
+
+<body>
+  <div class="other">
+    <h2 class="title2">Other</h2>
+    <a href="">Enlace 1</a>
+    <a href="">Enlace 2</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+    <a href="">Enlace 3</a>
+  </div>
+
+  <div class="register">
+    <h2 class="title2">Register</h2>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+      <!-- Selección de rol -->
+      <h3>Role</h3>
+      <div class="div-adm">
+        <select id="role" required>
+          <option value="usuario">usuario</option>
+          <option value="mantenimiento">mantenimiento</option>
+          <option value="gerencia">gerencia</option>
+          <option value="admin">admin</option>
+        </select>
+
+        <button type="button" id="registerButton">Register</button>
+    </form>
+    <button id="logoutButton">Log out</button>
+  </div>
+  </div>
+
+  <script src="../script/admin.js"></script>
+</body>
+
+</html>

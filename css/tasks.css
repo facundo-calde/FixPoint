@@ -1,0 +1,191 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* Asegura que el body tenga al menos el 100% de la altura del navegador */
+}
+
+/* Contenedor principal */
+.container {
+  width: 95%;
+  height: 100vh;
+  /* Ocupa el 100% de la altura del navegador */
+  max-width: none;
+  /* Elimina el límite de 1200px */
+  margin: auto;
+  padding: 20px;
+  background-color: #e5e7e9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  /* Para apilar los elementos dentro de .container de arriba hacia abajo */
+  max-height: 100vh
+}
+
+/* Título */
+h1.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el h2 en tasks.css */
+h2.title2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 5px 0 0;
+  color: #333;
+  /* Color de texto consistente */
+}
+
+/* Estilo para las tareas (en la tabla) */
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.105);
+  font-size: 14px;
+  /* Tamaño de texto consistente */
+  color: #333;
+  /* Color de texto consistente */
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Para las celdas de la tabla con prioridad */
+table .prioridad {
+  font-weight: bold;
+}
+
+table .prioridad.alta {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.383);
+  /* Rojo para Alta */
+}
+
+table .prioridad.media {
+  color: white;
+  background-color: rgba(255, 166, 0, 0.475);
+  /* Naranja para Media */
+}
+
+/* Estilo de los campos de entrada */
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.div-btn {
+  display: flex;
+  /* Usamos flexbox para alinearlos horizontalmente */
+  justify-content: flex-start;
+  /* Alinea los botones al inicio (izquierda) */
+  width: 100%;
+  /* Asegura que ocupe todo el ancho disponible */
+  gap: 10px;
+  /* Opcional: agrega un pequeño espacio entre los botones*/
+}
+
+.btn-submit,
+.btn-client {
+  padding: 8px 20px;
+  margin: 5px;
+  width: 100px;
+  font-size: 14px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.696);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-logout {
+  padding: 8px 20px;
+  margin: 5px;
+  width: 100px;
+  font-size: 14px;
+  box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.668);
+  background-color: #f03737c8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.696);
+}
+
+.btn-submit:hover,
+.btn-client:hover,
+.btn-logout:hover {
+  background-color: #808182;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+  flex-grow: 1;
+  /* Permite que la tabla ocupe el espacio disponible */
+  overflow-y: auto;
+  /* Muestra un scroll vertical solo cuando el contenido excede el alto */
+  margin-top: 20px;
+}
+
+/* Tabla de tareas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: space-between;
+  /* Puedes usar 'center' si prefieres que estén centrados */
+  gap: 10px;
+  /* Espacio entre los botones */
+  width: 100%;
+  /* Asegura que los botones ocupen todo el ancho disponible */
+  max-width: 500px;
+  /* Puedes ajustar el tamaño máximo si es necesario */
+  margin: 0 auto;
+  /* Para centrar el contenedor de botones en la página */
+}
